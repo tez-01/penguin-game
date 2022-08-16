@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to right, #9bbfe9, #7accc9);
+}
+#game-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;   
+}
+#title{
+    background-image: url(images/penguin_title.png);
+    width: 600px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+.penguin-1{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_1.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-1:hover{
+    background-image: url(images/mound_1_hover.png);
+}
+.penguin-2{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_2.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-2:hover{
+    background-image: url(images/mound_2_hover.png);
+}
+.penguin-3{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_3.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-3:hover{
+    background-image: url(images/mound_3_hover.png);
+}
+.penguin-4{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_4.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-4:hover{
+    background-image: url(images/mound_4_hover.png);
+}
+.penguin-5{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_5.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-5:hover{
+    background-image: url(images/mound_5_hover.png);
+}
+.penguin-6{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_6.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-6:hover{
+    background-image: url(images/mound_6_hover.png);
+}
+.penguin-7{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_7.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-7:hover{
+    background-image: url(images/mound_7_hover.png);
+}
+.penguin-8{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_8.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-8:hover{
+    background-image: url(images/mound_8_hover.png);
+}
+.penguin-9{
+    width: 200px;
+    height: 200px;
+    background-image: url(images/mound_9.png);
+    float: left;
+    cursor: pointer;
+}
+.penguin-9:hover{
+    background-image: url(images/mound_9_hover.png);
+}

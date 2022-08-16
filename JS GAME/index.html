@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>penguine game</title>
+</head>
+<body onload="penGame()">    
+    <div id="game-box">
+        <div id="title"></div>
+        <div class="penguin-1 sel"></div>
+        <div class="penguin-2 sel"></div>
+        <div class="penguin-3 sel"></div>
+        <div class="penguin-4 sel"></div>
+        <div class="penguin-5 sel"></div>
+        <div class="penguin-6 sel"></div>
+        <div class="penguin-7 sel"></div>
+        <div class="penguin-8 sel"></div>
+        <div class="penguin-9 sel"></div>
+    </div>
+
+    <script>
+        var x = [];
+        var one, two, three, four, five, six, seven, eight;
+
+        Divsel = document.getElementsByClassName("sel");
+        function penGame(){
+            var i = 0;
+            one=0, two=0, three=0, four=0, five=0, one=0, six=0, seven=0, eight=0;
+            finded =0;
+            while ( i < 9){
+                r = Math.floor(Math.random() * 9) + 0;
+                flag = 0;
+                for (k=0 ; k < x.length; k++) {
+                    if (r == x[k])
+                    flag = 1;
+                }
+                if (flag ==0){
+                    x.push(r);
+                    i++;
+                    console.log("random== " + r);
+                }
+            }
+            console.log ("array== " + x);
+            Divsel[x[0]].setAttribute("onclick" , "yeti()");
+            Divsel[x[1]].setAttribute("onclick" , "pen1()");
+            Divsel[x[2]].setAttribute("onclick" , "pen2()");
+            Divsel[x[3]].setAttribute("onclick" , "pen3()");
+            Divsel[x[4]].setAttribute("onclick" , "pen4()");
+            Divsel[x[5]].setAttribute("onclick" , "pen5()");
+            Divsel[x[6]].setAttribute("onclick" , "pen6()");
+            Divsel[x[7]].setAttribute("onclick" , "pen7()");
+            Divsel[x[8]].setAttribute("onclick" , "pen8()");
+        }
+        
+        function yeti(){
+            Divsel[x[0]].style.backgroundImage = "url('images/yeti.png')";
+            window.setTimeout("window.location.href='play-again.html'", 500)
+        }
+
+        function pen1(){
+            Divsel[x[1]].style.backgroundImage = "url('images/penguin_1.png')";
+            if(one==0)
+            {
+                finded++;
+                one++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen2(){
+            Divsel[x[2]].style.backgroundImage = "url('images/penguin_2.png')";
+            if(two==0)
+            {
+                finded++;
+                two++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen3(){
+            Divsel[x[3]].style.backgroundImage = "url('images/penguin_3.png')";
+            if(three==0)
+            {
+                finded++;
+                three++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen4(){
+            Divsel[x[4]].style.backgroundImage = "url('images/penguin_4.png')";
+            if(four==0)
+            {
+                finded++;
+                four++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen5(){
+            Divsel[x[5]].style.backgroundImage = "url('images/penguin_5.png')";
+            if(five==0)
+            {
+                finded++;
+                five++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen6(){
+            Divsel[x[6]].style.backgroundImage = "url('images/penguin_6.png')";
+            if(six==0)
+            {
+                finded++;
+                six++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen7(){
+            Divsel[x[7]].style.backgroundImage = "url('images/penguin_7.png')";
+            if(seven==0)
+            {
+                finded++;
+                seven++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+
+        function pen8(){
+            Divsel[x[8]].style.backgroundImage = "url('images/penguin_8.png')";
+            if(eight==0)
+            {
+                finded++;
+                eight++              
+            }
+            if (finded == 8)
+            window.setTimeout("window.location.href='win.html'", 500)
+        }
+    </script>
+</body>
+</html>
